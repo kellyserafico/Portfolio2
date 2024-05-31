@@ -1,8 +1,18 @@
+html{
+  cursor:url("images/Wii Cursor.svg"), auto;
+}
+
 @font-face {
     font-family: "RO Spiritendo";
     src: url("fonts/RoSpritendoSemiboldBeta-vmVwZ.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+  font-family: "FOT-RodinNTLGPro-DB";
+  src: url("fonts/FOT-RodinBokutoh Pro DB.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .header {
@@ -16,12 +26,26 @@
 .info-section{
     display:flex;
     flex-direction: row;
-    position:relative;
+    position:absolute;
     top:275px;
+    justify-content: center;
+    /* left: 50%;
+    transform: translate(-50%); */
+    width:100%;
+    margin:auto;
+
+    justify-content:space-evenly;
+}
+.info-section img{
+  width:250px;
 }
 
 .info h1{
+  top:60px;
+  position:relative;
+  font-size:30px;
     font-family: 'Courier New', Courier, monospace;
+    /* font-family: "FOT-RodinNTLGPro-DB", sans-serif; */
     text-align:center;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid black; /* The typwriter cursor */
@@ -43,4 +67,47 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black; }
+  }
+
+
+
+  .info p{
+    /* font-family: "Roboto Mono", monospace, Sans-Serif; */
+    font-family: "FOT-RodinNTLGPro-DB", sans-serif;
+    text-align:center;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size:20px;
+    
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width:750px;
+  }
+  .info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 800px;
+    height:400px;
+    border-radius:130px;
+    border-width:7px;
+    border-color: #CBCBCB;
+    border-style:solid;
+    background: linear-gradient(to bottom, #FFFFFF 53%, #F5F5F5 100%);
+    padding:20px;
+    /* min-width:700px; */
+  }
+
+  .info-section img{
+    width:250px;
+  }
+
+  .arrow{
+    position:relative;
+    top:180px;
+  }
+  .arrow:hover{
+    transform: scale(1.2);
   }

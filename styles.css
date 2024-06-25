@@ -1,6 +1,6 @@
 html{
   cursor:url("images/Wii Cursor.svg"), auto;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 body{
   margin: 0px;
@@ -19,12 +19,21 @@ body{
   font-style: normal;
 }
 
-.header {
-    font-family: "RO Spiritendo", sans-serif;
-    text-align: center;
-    font-size: 50px;
-    top:50px;
-    position:relative;
+nav{
+  display: flex;
+  flex-direction:row;
+  font-family: "museoModerno", sans-serif;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav div{
+  display:flex;
+  flex-direction:row;
+}
+nav div p{
+  padding: 10px;
+  font-size: 20px;
 }
 
 .info-section{
@@ -88,17 +97,17 @@ body{
   transform: translateY(-50%);
   width:750px;
 }
-.info{
+.info-text-container{
   display:flex;
   flex-direction:row;
   align-items:center;
   width: 800px;
   height:350px;
-  border-radius:130px;
-  border-width:7px;
-  border-color: #CBCBCB;
+  border-radius: 42px;
+  border-width:5px;
+  border-color: black;
   border-style:solid;
-  background: linear-gradient(to bottom, #FFFFFF 53%, #F5F5F5 100%);
+  background-color:white;
   padding:20px;
   min-width:700px;
 }
@@ -138,16 +147,20 @@ body{
 }
 
 .start-container{
-  background-image: url("images/Union.svg");
-  width:100%;
-  min-height:300px;
-  /* height:100%; */
+  border-width: 2px;
+  border:solid;
+  border-color: black;
+  width: 350px;
+  height: 100px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.start-button-section{
-  width:100%;
-  margin:auto;
-  height:100%;
-  /* min-height:300px; */
+.start-container p{
+  font-size: 40px;
+  font-family: "FOT-RodinNTLGPro-DB", sans-serif;
+
 }
 
 .start-button{

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/tooling.css">
+    <link rel="stylesheet" href="styles.project.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&amp;family=Source+Code+Pro:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,154 +13,34 @@
     <title>Kelly Serafico</title>
 </head>
 <body>
-    <div class="header"><h>Kelly Serafico</h></div>
-    <div class="info-section">
-        <img src="images/DefaultFemaleMii.jpg">
-        <div class="info">
-            <img src="images\Flèche Gauche.svg" height="60" class="left-arrow">
-            <div class="info-text">
-                <h1>Hi, I’m Kelly. Nice to meet you!</h1>
-                <p>I am a third-year student enrolled at the University of California, Irvine, pursuing a degree in software engineering. I am passionate about front-end development and video games, which I base most of my projects on. Please explore my work, and don't hesitate to reach out if you'd like to explore potential collaborations or just to say hi!</p>
-            </div>
-            <img src="images/Flèche Droite.svg" height="60" class="right-arrow">
+    <nav>
+        <h1>kelly serafico</h1>
+        <div>
+            <p>about</p>
+            <p>tooling</p>
+            <p>projects</p>
+            <p>say hi!</p>
         </div>
+    </nav>
+    <section class="info-section">
+        <section class="info-text">
+            <h3>hi, i'm kelly. nice to meet you!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo consequatur corrupti soluta distinctio temporibus? Deleniti perspiciatis reiciendis culpa nihil similique alias laboriosam dolor animi quisquam quis harum repudiandae, laborum temporibus!</p>
+            <address class="email-section">
+                <img src="images/email-icon.svg">
+                <a href="mailto:seraficok@gmail.com">seraficok@gmail.com</a>
+            </address>
+        </section>
+    
+    </section>
 
+    <div class="tooling-section">
+        
     </div>
-    <!-- <div class="start-container">
-         <img src="images/Union.svg" class="start-button-section"> 
-        <img src="images/Button Wii Start.svg" class="start-button">
-    </div> -->
+
 
     <div class="projects-section">
-        <div class="projects-header">
-            <h2>Projects</h2>
-        </div>
-        <div class="projects">
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">JAVASCRIPT</div>
-                    <div class="tool">HTML</div>
-                    <div class="tool">CSS</div>
-                </div>
-
-                <div class="project-name">Valdle</div>
-
-                <div class="project-desc">
-                    Valdle is an engaging Valorant trivia website featuring various game modes. During its development, I learned API integration and full-stack web development, inspired by Wordle and Loldle.
-                </div>
-
-                <img class="project-image" src="images/Valdle.png">
-                <div class="shadow"></div>
-            </div>
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">REACT</div>
-                    <div class="tool">TAILWIND</div>
-                </div>
-
-                <div class="project-name">Memotrail</div>
-
-                <div class="project-desc">
-                    MemoTrail is a mobile-first web app using augmented reality to overlay digital messages onto real-world locations. Users can leave and discover messages tied to specific places. I worked on UI design and frontend implementation.
-                </div>
-
-                <img class="project-image" src="images/MemoTrail.png">
-                <div class="shadow"></div>
-            </div>
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">REACT</div>
-                    <div class="tool">CSS</div>
-                    <div class="tool">SQLITE</div>
-                    <div class="tool">FLASK</div>
-                    <div class="tool">PYTHON</div>
-                </div>
-
-                <div class="project-name">Gym Scheduler</div>
-
-                <div class="project-desc">
-                    This is a website designed for a gym that allows users to reserve courts, rent equipment, and manage their accounts. blahblahblahblah
-                </div>
-
-                <img class="project-image" src="images/Gym Scheduler.png">
-                <div class="shadow"></div>
-            </div>
-
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">JAVASCRIPT</div>
-                    <div class="tool">HTML</div>
-                    <div class="tool">CSS</div>
-                </div>
-
-                <div class="project-name">PetTok</div>
-
-                <div class="project-desc">
-                    PetTok is a social media platform designed for pets. This website also utilizes hand tracking for extra accessibility options to navigate around the app.
-                </div>
-
-                <img class="project-image" src="images/PetTok.png">
-                <div class="shadow"></div>
-            </div>
-
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">JAVASCRIPT</div>
-                    <div class="tool">HTML</div>
-                    <div class="tool">CSS</div>
-                </div>
-
-                <div class="project-name">Valdle</div>
-
-                <div class="project-desc">
-                    Valdle is an engaging Valorant trivia website featuring various game modes. During its development, I learned API integration and full-stack web development, inspired by Wordle and Loldle.
-                </div>
-
-                <img class="project-image" src="images/Valdle.png">
-                <div class="shadow"></div>
-            </div>
-
-            <div class="project">
-                <div class="github">
-                    <img src="images/github-logo-container.png" class="github-container">
-                    <img src="images/github-logo.png" class="github-logo">
-                </div>
-                <div class="tools">
-                    <div class="tool">JAVASCRIPT</div>
-                    <div class="tool">HTML</div>
-                    <div class="tool">CSS</div>
-                </div>
-
-                <div class="project-name">Valdle</div>
-
-                <div class="project-desc">
-                    Valdle is an engaging Valorant trivia website featuring various game modes. During its development, I learned API integration and full-stack web development, inspired by Wordle and Loldle.
-                </div>
-
-                <img class="project-image" src="images/Valdle.png">
-                <div class="shadow"></div>
-            </div>
-        </div>
+      
     </div>
 
 </body>

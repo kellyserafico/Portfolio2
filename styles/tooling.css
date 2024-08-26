@@ -1,7 +1,86 @@
-.tooling-section{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-width:20px;
-    border-color:white;
+.tooling-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #09090C;
+}
+
+.window-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 65vw;
+    height: 50vh;
+    border-radius: 27px;
+    background-color: #262627;
+    /* opacity: .47; */
+    margin: auto;
+    padding: 0px 16px 16px 16px;
+    
+}
+
+.window-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+    height: 50px; /* Adjust height as needed */
+}
+.window-header p{
+    margin: auto;
+}
+.window-buttons{
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    /* margin-left: 10px; */
+    
+}
+.window-button{
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position:relative;
+
+}
+
+.window-button:not(:first-child){
+    margin-left: 8px;
+}
+
+.red{
+    background-color: #875050;
+}
+.yellow{
+    background-color: #B4BA66
+}
+
+.green{
+    background-color: #65B576
+}
+
+.window-container p{
+    color:white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.window-text{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 330px;
+}
+
+#type{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: normal; /* Adjust as needed */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    position: relative;
 }

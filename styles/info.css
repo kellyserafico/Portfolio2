@@ -1,9 +1,16 @@
 html{
   /* cursor:url("images/Wii Cursor.svg"), auto; */
-  /* overflow-x: hidden */
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
   background-color: #09090C;
   /* padding: 40px; */
   /* padding-top:0px; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 body{
   margin: 0px;
@@ -52,13 +59,13 @@ nav div{
   left: 40px;
 }
 nav div p{
-  margin-right: 60px;
+  padding-right: 60px;
   font-size: 20px;
 }
 
 .info-section{
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
 }
 .info-text{
   color: white;
@@ -84,5 +91,5 @@ nav div p{
   color:white;
 }
 .email-section img{
-  margin-right: 15px;
+  padding-right: 15px;
 }

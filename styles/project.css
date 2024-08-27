@@ -1,0 +1,171 @@
+.projects-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #09090C;
+}
+
+.project-title-container{
+    color:white;
+    font-family: "museoModerno", sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+    /* change this */
+    margin-top: 100px;
+
+    border-color:white;
+    border-style:solid;
+    border-radius: 60px;
+    width:fit-content;
+    height: 70px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+/* .projects{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "museoModerno", sans-serif;
+}
+
+.project-container{
+    width: 350px;
+    height: 350px;
+    border-style: solid;
+    border-color: white;
+    color:white;
+}
+
+.project-tools{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    height: 50px;
+    font-size: 12px;
+}
+.project-tools p{
+    background-color: rgba(228, 228, 228, .32);
+    border-radius: 90px;
+    display:flex;
+    align-items:center;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* height: fit-content;
+}
+.project-tools p:not(:first-child){
+    margin-left: 10px;
+}
+
+.project-name{
+    font-size: 30px;
+}
+
+.project-desc{
+    font-size: 13px;
+}
+
+.project-container img{
+    width: 400px;
+} */ 
+
+.projects{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+  }
+  .project{
+    width:450px;
+    height:450px;
+    border-style:solid;
+    border-width:5px;
+    border-color:black;
+    margin-top:20px;
+    font-family: "MuseoModerno", sans-serif;
+    transition: transform 0.3s ease;
+    position:relative;
+  
+  }
+  
+  .project:hover:not(.shadow){
+    transform: translateY(-4px);
+  }
+  .shadow{
+    width:95%;
+    height:4px;
+    background-color: black;
+    position:absolute;
+    bottom:-8px;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .tools{
+    display:flex;
+    flex-direction:row;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:5px;
+  }
+  .tool{
+    border-radius:90px;
+    background-color:#eaeaea;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:12px;
+    margin-right: 5px;
+    font-weight: 600;
+  }
+  
+  .project-name{
+    font-weight:600;
+    font-size: 20px;
+    margin-left:10px;
+  }
+  
+  .project-desc{
+    margin-left:10px;
+    font-weight:600;
+    font-size:13px;
+    width:340px;
+  }
+  
+  .project-image{
+    width:400px;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    bottom:15px;
+  }
+  
+  .github{
+    /* border: solid; */
+    position:absolute;
+    width:80px;
+    height:80px;
+    top: 30px;
+    right: 1px;
+  }
+  
+  .github-logo{
+    width:60px;
+    left: 16px;
+    top: 7px;
+  }
+  
+  .github img{
+    position:absolute;
+  
+    /* height:70px; */
+  }

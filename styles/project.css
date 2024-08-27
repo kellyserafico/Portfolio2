@@ -31,52 +31,6 @@
 
 }
 
-/* .projects{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-family: "museoModerno", sans-serif;
-}
-
-.project-container{
-    width: 350px;
-    height: 350px;
-    border-style: solid;
-    border-color: white;
-    color:white;
-}
-
-.project-tools{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    height: 50px;
-    font-size: 12px;
-}
-.project-tools p{
-    background-color: rgba(228, 228, 228, .32);
-    border-radius: 90px;
-    display:flex;
-    align-items:center;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* height: fit-content;
-}
-.project-tools p:not(:first-child){
-    margin-left: 10px;
-}
-
-.project-name{
-    font-size: 30px;
-}
-
-.project-desc{
-    font-size: 13px;
-}
-
-.project-container img{
-    width: 400px;
-} */ 
 
 .projects{
     display:flex;
@@ -85,15 +39,16 @@
     flex-wrap:wrap;
   }
   .project{
-    width:450px;
-    height:450px;
+    width:500px;
+    height:500px;
     border-style:solid;
     border-width:5px;
-    border-color:black;
+    border-color:white;
     margin-top:20px;
     font-family: "MuseoModerno", sans-serif;
     transition: transform 0.3s ease;
     position:relative;
+    color: white;
   
   }
   
@@ -103,7 +58,7 @@
   .shadow{
     width:95%;
     height:4px;
-    background-color: black;
+    background-color: white;
     position:absolute;
     bottom:-8px;
     left:50%;
@@ -118,7 +73,7 @@
   }
   .tool{
     border-radius:90px;
-    background-color:#eaeaea;
+    background-color:rgba(228, 228, 228, .35);;
     padding-top:2px;
     padding-bottom:2px;
     padding-left:5px;

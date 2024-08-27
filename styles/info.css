@@ -93,3 +93,14 @@ nav div p{
 .email-section img{
   padding-right: 15px;
 }
+
+.arrow-down {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  animation: bob 2s infinite;
+}

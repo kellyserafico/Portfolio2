@@ -16,126 +16,87 @@
     flex-wrap:wrap;
   }
 
-  .projects-header{
-    border-style:solid;
-    border-color:#ffffff;
-    border-width: 4px;
-    width: 550px;
-    height: 100px;
-    margin:auto;
-    border-radius:60px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 0 5px 0 white; */
-  }
-  
-  .projects-header h2{
-    border-radius:60px;
-    font-size: 60px;
-    font-family: "MuseoModerno", sans-serif;
-    color: white;
-  }
+.projects p{
+  margin: 0;
+}
 
-  .project{
-    width:500px;
-    height:500px;
-    border-style:solid;
-    border-width:5px;
-    border-color: #ffffff;
-    margin-top:20px;
-    font-family: "MuseoModerno", sans-serif;
-    transition: transform 0.3s ease;
-    position:relative;
-    color: white;
-    margin-bottom: 10px;
-  
-  }
-  
-  .project:hover:not(.shadow){
-    transform: translateY(-4px);
-  }
-  .shadow{
-    width:95%;
-    height:4px;
-    background-color: white;
-    position:absolute;
-    bottom:-8px;
-    left:50%;
-    transform: translateX(-50%);
-  }
-  .tools{
-    display:flex;
-    flex-direction:row;
-    margin-top:10px;
-    margin-left:10px;
-    margin-bottom:5px;
-  }
-  .tool{
-    border-radius:90px;
-    background-color:rgba(228, 228, 228, .35);;
-    padding-top:2px;
-    padding-bottom:2px;
-    padding-left:5px;
-    padding-right:5px;
-    font-size:12px;
-    margin-right: 5px;
-    font-weight: 600;
-    color: black;
-  }
-  
-  .project-name{
-    font-weight:600;
-    font-size: 20px;
-    margin-left:10px;
-  }
-  
-  .project-desc{
-    margin-left:10px;
-    font-weight:600;
-    font-size:13px;
-    width:340px;
-  }
-  
-  .project-image{
-    width:400px;
-    left: 50%;
-    transform: translateX(-50%);
-    position:absolute;
-    bottom:15px;
-  }
-  
-  .github{
-    /* border: solid; */
-    position:absolute;
-    width:80px;
-    height:80px;
-    top: 30px;
-    right: 1px;
-  }
-  
-  .github-logo{
-    width:60px;
-    left: 16px;
-    top: 7px;
-  }
-  
-  .github img{
-    position:absolute;
-  
-    /* height:70px; */
-  }
+.projects-header{
+  border-style:solid;
+  border-color:#ffffff;
+  border-width: 4px;
+  width: 550px;
+  height: 100px;
+  margin:auto;
+  border-radius:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 5px 0 white; */
+}
 
-  #valdle .tool, #valdle .shadow{
-    background-color: #FF9898;
-  }
+.projects-header h2{
+  border-radius:60px;
+  font-size: 60px;
+  font-family: "MuseoModerno", sans-serif;
+  color: white;
+}
 
-  #DAU .tool, #DAU .shadow{
-    background-color: #C8E4AB;
-  }
+.project{
+  width: 60vw;  
+  min-width: 840px;
+  height: 700px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: #818181;
+  /* background-color: #0F0F0F; */
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  color: white;
+  font-family: "MuseoModerno", sans-serif;
+}
 
-  #linkhub .tool, #linkhub .shadow{
-    /* background-color: #CBF1F1; */
+.project:hover{
+  transform: scale(1.03);
+  transition: transform 0.4s ease-in-out;
+}
 
-    background-color: #D6DDF1;
-  }
+.project-title{
+  font-size: 3em;
+  font-family: 'MuseoModerno', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.role{
+  color: #BA7D7D;
+  font-size: 1em;
+}
+
+.tools{
+  display:flex;
+  flex-direction: row;
+}
+.tool{
+  width: fit-content;
+  border-radius: 17px;
+  background-color: #7D575C;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+}
+.tool:not(:first-child){
+  margin-left: 5px;
+}
+
+.project-image{
+  width: 50%;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

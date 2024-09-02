@@ -1,0 +1,190 @@
+.projects-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #09090C;
+}
+
+
+.projects{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  flex-wrap:nowrap;
+}
+
+.projects p{
+  margin: 0;
+}
+
+.projects-header{
+  border-style:solid;
+  border-color:#ffffff;
+  border-width: 4px;
+  width: 550px;
+  height: 100px;
+  margin:auto;
+  border-radius:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 5px 0 white; */
+}
+
+.projects-header h2{
+  border-radius:60px;
+  font-size: 60px;
+  font-family: "MuseoModerno", sans-serif;
+  color: white;
+}
+
+.project{
+  width: 1100px;  
+  min-width: 840px;
+  height: 600px;
+  max-height: 700px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: #818181;
+  /* background-color: #0F0F0F; */
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  color: white;
+  font-family: "MuseoModerno", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project:hover{
+  transform: scale(1.01);
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer
+}
+
+.project-title{
+  font-size: 3em;
+  font-family: 'MuseoModerno', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.github{
+  height: 60px;
+  margin-left: 20px;
+  z-index: 50;
+}
+
+.github:hover{
+  transform: scale(1.1);
+  transition: transform 0.25s ease-in-out;
+
+}
+
+.project-description{
+  font-size: 1.2em;
+  font-family: 'MuseoModerno', sans-serif;
+  color: white;
+  font-weight: 600;
+
+  max-width: 470px;
+}
+
+.role{
+  font-size: 1em;
+  font-weight:bolder;
+}
+
+.tools{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.tool{
+  width: fit-content;
+  border-radius: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+  color: #3A2A2A;
+  font-weight:bolder;
+}
+.tool:not(:first-child){
+  margin-left: 5px;
+}
+
+.project-image{
+  width: 40%;
+}
+
+#valdle .role{
+  color: #EBAFAF;
+}
+
+#valdle .tool, #valdle .achievement{
+  background-color: #EBAFAF;
+}
+
+#dau .role{
+  color: #AFEBB6;
+}
+
+#dau .tool, #dau .achievement{
+  background-color: #AFEBB6;
+}
+
+#memotrail .role{
+  color: #AFCBEB
+}
+
+#memotrail .tool, #memotrail .achievement{
+  background-color: #AFCBEB;
+  color: #252821;
+}
+
+
+.project-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements{
+  margin-top: 20px;
+}
+
+.achievement{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 55px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #3A2A2A;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+.achievement:not(:first-child){
+  margin-top: 10px;
+}
+
+.achievement p{
+  margin-left: 5px;
+  white-space: nowrap;
+}

@@ -68,22 +68,24 @@
     opacity: 1;
 }
 
-.window-text{
-    display:flex;
+.window-text {
+    display: flex;
     flex-direction: row;
     align-items: center;
     width: 330px;
     font-size: 20px;
 }
 
-#type{
+#type {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto; /* Centers the text within its container */
     letter-spacing: normal; /* Adjust as needed */
+    width: 100%; /* Ensure the content is visible and maintains width */
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
     position: relative;
+    animation-fill-mode: forwards; /* Retain the last keyframe of the animation */
 }
 
 .tools-r1{
